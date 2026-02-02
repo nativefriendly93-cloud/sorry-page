@@ -16,13 +16,19 @@
     .card {
       background: white;
       padding: 30px;
-      border-radius: 15px;
+      border-radius: 18px;
       max-width: 420px;
       text-align: center;
-      box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+      box-shadow: 0 15px 30px rgba(0,0,0,0.25);
     }
     h1 {
       color: #e63946;
+      margin-bottom: 10px;
+    }
+    h2 {
+      color: #555;
+      font-weight: normal;
+      margin-top: 0;
     }
     p {
       font-size: 16px;
@@ -30,32 +36,74 @@
       line-height: 1.6;
     }
     .heart {
-      font-size: 40px;
+      font-size: 42px;
       animation: beat 1s infinite;
+      margin-bottom: 10px;
     }
     @keyframes beat {
       0%, 100% { transform: scale(1); }
-      50% { transform: scale(1.2); }
+      50% { transform: scale(1.25); }
+    }
+    .btn {
+      margin-top: 20px;
+      padding: 12px 22px;
+      background: #e63946;
+      color: white;
+      border: none;
+      border-radius: 25px;
+      font-size: 16px;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-block;
+    }
+    .btn:hover {
+      background: #d62828;
+    }
+    .note {
+      font-size: 12px;
+      color: #777;
+      margin-top: 15px;
     }
   </style>
 </head>
 <body>
+
+  <!-- Background Music -->
+  <audio autoplay loop>
+    <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+  </audio>
+
   <div class="card">
     <div class="heart">❤️</div>
+
     <h1>I'm Sorry</h1>
+    <h2>Sahni</h2>
+
     <p>
       Shayad meri baat ka tareeka galat tha.<br>
       Tumhe laga hoga main doubt kar raha hoon,<br>
-      par mera intention kabhi galat nahi tha.
+      par mera intention kabhi bhi galat nahi tha.
     </p>
+
     <p>
-      Main bas care ki wajah se react kar gaya.<br>
-      Tumhari feelings mere liye important hain.
+      Tum bina bataye gayi aur calls nahi uthi,<br>
+      isliye main thoda sa react kar gaya.<br>
+      Yeh control nahi, bas care thi.
     </p>
+
     <p>
-      Jab tum ready ho,<br>
-      hum shaanti se baat kar sakte hain?
+      Tumhari feelings mere liye important hain.<br>
+      Jab tum ready ho, hum shaanti se baat kar sakte hain?
     </p>
+
+    <a class="btn" href="https://wa.me/YOUR_NUMBER" target="_blank">
+      Talk to Me 💬
+    </a>
+
+    <div class="note">
+      No pressure. Jab mann ho tab.
+    </div>
   </div>
+
 </body>
 </html>
